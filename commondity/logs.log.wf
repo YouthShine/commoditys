@@ -1,0 +1,1244 @@
+CRITICAL: 12-05 16:46:53: _legacy.py:154 * 5572 Unhandled error in Deferred:
+CRITICAL: 12-05 16:46:53: _legacy.py:154 * 5572 
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 90, in crawl
+    six.reraise(*exc_info)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 72, in crawl
+    self.engine = self._create_engine()
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 97, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "d:\python27\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.scraper = Scraper(crawler)
+  File "d:\python27\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "d:\python27\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "d:\python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\yunsomSpider\commondity\commondity\pipelines\image\base_pipe.py", line 12, in <module>
+    from commondity.ScrapyFileSystem.ScrapyStart import *
+  File "D:\yunsomSpider\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 59
+    data = urllib..urlretrieve(url).read()
+                  ^
+SyntaxError: invalid syntax
+WARNING: 12-06 10:36:37: deprecate.py:156 * 8544 d:\python27\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+WARNING: 12-06 10:36:37: useragent.py:5 * 8544 D:\yunsomSpider\commondity\commondity\rotate_useragent.py:4: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.useragent` is deprecated, use `scrapy.downloadermiddlewares.useragent` instead
+  from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
+
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P40919.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P32980.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P40876.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P53935.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P54401.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16637.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P50371.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16357.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P20461.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P53855.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16114.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P50382.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P19368.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P54494.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17470.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16962.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P40707.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17030.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17442.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P1067.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17964.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P4979.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P50242.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P18269.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P18257.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P50013.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P50553.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P54655.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P32374.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17504.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P49400.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P1107.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P20564.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17002.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P40663.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P32931.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16156.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P15533.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16837.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P40918.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P40593.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P20221.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P20057.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16932.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P50359.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P49376.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P18908.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P40577.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P15923.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P29736.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17010.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P50259.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17675.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17274.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P18472.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P32354.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16209.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P29387.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17167.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16178.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P32592.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P32526.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P40818.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P54346.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P49327.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P53843.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P49360.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17584.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17446.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P18772.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P32663.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:38: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P33073.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:39: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P40683.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:39: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P50180.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:49: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P54482.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:49: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17027.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:49: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P29636.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:49: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P20320.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:49: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P20567.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:49: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P1104.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:49: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P18885.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:49: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P53954.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:49: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P15876.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P1110.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P1072.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P40723.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P4723.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17976.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P29937.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17509.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P29267.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16691.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17432.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16811.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P18470.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P18198.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16167.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P29991.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P54556.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P20608.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P32605.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P30024.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P40927.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P32785.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P20228.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P49352.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P49986.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P49923.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P40816.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17888.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P1078.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P20051.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16479.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P16320.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P20495.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P32903.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P50267.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P15761.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P54491.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P18224.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P32926.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17729.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P17538.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P49552.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P50535.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P50236.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P19373.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P20523.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+ERROR: 12-06 10:36:50: scraper.py:208 * 8544 Error downloading <GET http://www.315mro.com/Product/P20127.html>
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "D:\yunsomSpider\commondity\commondity\rotate_useragent.py", line 55, in process_request
+    res=redisId.srandmember("ipPool",1)[0].strip()
+IndexError: list index out of range
+WARNING: 12-06 10:37:44: deprecate.py:156 * 2364 d:\python27\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+WARNING: 12-06 10:37:44: useragent.py:5 * 2364 D:\yunsomSpider\commondity\commondity\rotate_useragent.py:4: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.useragent` is deprecated, use `scrapy.downloadermiddlewares.useragent` instead
+  from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
+
+WARNING: 12-06 10:39:27: deprecate.py:156 * 7136 d:\python27\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+WARNING: 12-06 10:39:27: useragent.py:5 * 7136 D:\yunsomSpider\commondity\commondity\rotate_useragent.py:4: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.useragent` is deprecated, use `scrapy.downloadermiddlewares.useragent` instead
+  from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
+
+WARNING: 12-06 10:53:14: deprecate.py:156 * 8864 d:\python27\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+WARNING: 12-06 10:53:14: useragent.py:5 * 8864 D:\yunsomSpider\commondity\commondity\rotate_useragent.py:4: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.useragent` is deprecated, use `scrapy.downloadermiddlewares.useragent` instead
+  from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
+
+WARNING: 12-06 10:53:23: deprecate.py:156 * 9136 d:\python27\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+WARNING: 12-06 10:53:23: useragent.py:5 * 9136 D:\yunsomSpider\commondity\commondity\rotate_useragent.py:4: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.useragent` is deprecated, use `scrapy.downloadermiddlewares.useragent` instead
+  from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
+
+WARNING: 12-06 10:53:59: deprecate.py:156 * 6072 d:\python27\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+WARNING: 12-06 10:53:59: useragent.py:5 * 6072 D:\yunsomSpider\commondity\commondity\rotate_useragent.py:4: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.useragent` is deprecated, use `scrapy.downloadermiddlewares.useragent` instead
+  from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
+
+WARNING: 12-06 10:54:06: deprecate.py:156 * 4528 d:\python27\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+WARNING: 12-06 10:54:06: useragent.py:5 * 4528 D:\yunsomSpider\commondity\commondity\rotate_useragent.py:4: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.useragent` is deprecated, use `scrapy.downloadermiddlewares.useragent` instead
+  from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
+
+WARNING: 12-06 10:55:04: deprecate.py:156 * 3736 d:\python27\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+WARNING: 12-06 10:55:04: useragent.py:5 * 3736 D:\yunsomSpider\commondity\commondity\rotate_useragent.py:4: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.useragent` is deprecated, use `scrapy.downloadermiddlewares.useragent` instead
+  from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
+
+WARNING: 12-06 10:55:32: deprecate.py:156 * 8924 d:\python27\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+WARNING: 12-06 10:55:32: useragent.py:5 * 8924 D:\yunsomSpider\commondity\commondity\rotate_useragent.py:4: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.useragent` is deprecated, use `scrapy.downloadermiddlewares.useragent` instead
+  from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
+

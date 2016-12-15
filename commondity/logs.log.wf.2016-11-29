@@ -1,0 +1,26 @@
+ERROR: 11-29 09:34:49: engine.py:132 * 3808 Error while obtaining start requests
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\core\engine.py", line 126, in _next_request
+    request = next(slot.start_requests)
+  File "d:\python27\lib\site-packages\scrapy\spiders\__init__.py", line 70, in start_requests
+    yield self.make_requests_from_url(url)
+  File "d:\python27\lib\site-packages\scrapy\spiders\__init__.py", line 73, in make_requests_from_url
+    return Request(url, dont_filter=True)
+  File "d:\python27\lib\site-packages\scrapy\http\request\__init__.py", line 25, in __init__
+    self._set_url(url)
+  File "d:\python27\lib\site-packages\scrapy\http\request\__init__.py", line 57, in _set_url
+    raise ValueError('Missing scheme in request url: %s' % self._url)
+ValueError: Missing scheme in request url: h
+ERROR: 11-29 09:36:56: engine.py:132 * 10072 Error while obtaining start requests
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\core\engine.py", line 126, in _next_request
+    request = next(slot.start_requests)
+  File "d:\python27\lib\site-packages\scrapy\spiders\__init__.py", line 70, in start_requests
+    yield self.make_requests_from_url(url)
+  File "d:\python27\lib\site-packages\scrapy\spiders\__init__.py", line 73, in make_requests_from_url
+    return Request(url, dont_filter=True)
+  File "d:\python27\lib\site-packages\scrapy\http\request\__init__.py", line 25, in __init__
+    self._set_url(url)
+  File "d:\python27\lib\site-packages\scrapy\http\request\__init__.py", line 57, in _set_url
+    raise ValueError('Missing scheme in request url: %s' % self._url)
+ValueError: Missing scheme in request url: h

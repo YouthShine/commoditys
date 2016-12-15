@@ -1,0 +1,2177 @@
+ERROR: 11-16 10:49:09: scraper.py:158 * 9688 Spider error processing <GET http://www.8shop.cc/goods/111520.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_8shop_redis.py", line 59, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 10:50:29: scraper.py:234 * 6060 Error processing {'fileName': 'spider_wwmro_redis.json',
+ 'productAddres': '',
+ 'productBrand': '\xe9\x87\x91\xe4\xbd\xb0\xe5\x88\xa9/Kimberly-clark',
+ 'productClassification': '\xe8\xbd\xa6\xe9\x97\xb4\xe8\xae\xbe\xe6\x96\xbd\xe3\x80\x81\xe6\xb8\x85\xe6\xb4\x81\xe7\x8e\xaf\xe4\xbf\x9d|||\xe7\xba\xb8/\xe6\xa3\x89\xe7\xb1\xbb\xe4\xba\xa7\xe5\x93\x81|||\xe5\xb7\xa5\xe4\xb8\x9a\xe6\x93\xa6\xe6\x8b\xad\xe7\xba\xb8\xe7\xb1\xbb',
+ 'productCompany': '',
+ 'productDetails': [],
+ 'productImagePath': 'http://www.wwmro.com/upload/store/goods/114/114_7145714be8ebc56199e4b059f51efd7d.jpg_max.jpg',
+ 'productIntro': [{'attrkey': '\xe5\x8c\x85\xe8\xa3\x85\xef\xbc\x9a',
+                   'keyname': '\xe6\x8a\x98\xe5\x8f\xa0\xe8\xa3\x85\xef\xbc\x88\xe7\x9b\x92\xe8\xa3\x85/\xe8\xa2\x8b\xe8\xa3\x85\xef\xbc\x89'},
+                  {'attrkey': '\xe7\xb1\xbb\xe5\x88\xab\xef\xbc\x9a',
+                   'keyname': '\xe6\x93\xa6\xe8\xaf\x95\xe5\xb8\x83'}],
+ 'productModel': '83030',
+ 'productName': '\xe9\x87\x91\xe4\xbd\xb0\xe5\x88\xa9 Kimberly-Clark WYPALL* \xe6\xa0\x87\xe5\x87\x86\xe5\x9e\x8b\xe5\xbd\xa9\xe8\x89\xb2\xe6\xb8\x85\xe6\xb4\x81\xe6\x93\xa6\xe6\x8b\xad\xe5\xb8\x83(\xe9\xbb\x84\xe8\x89\xb2) 94144',
+ 'productPack': [],
+ 'productPrice': '2860.0',
+ 'productSpeci': [],
+ 'productUrl': 'http://www.wwmro.com/item-9957-114.html'}
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 19, in process_item
+    DataAnalysis(line)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 40, in DataAnalysis
+    logs.log("ScrapyStart:"+str(e))
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 97, in log
+    self.writeFile(tempTxt)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 77, in writeFile
+    f = open(filePath,"a+")
+IOError: [Errno 2] No such file or directory: 'commondity/public/logs/1479225600_ScrapyStart.log'
+ERROR: 11-16 10:51:07: scraper.py:234 * 6060 Error processing {'fileName': 'spider_wwmro_redis.json',
+ 'productAddres': '',
+ 'productBrand': '',
+ 'productClassification': '\xe8\xbd\xa6\xe9\x97\xb4\xe8\xae\xbe\xe6\x96\xbd\xe3\x80\x81\xe6\xb8\x85\xe6\xb4\x81\xe7\x8e\xaf\xe4\xbf\x9d|||\xe7\x94\xb5\xe5\x8a\xa8\xe6\xb8\x85\xe6\xb4\x81\xe8\xae\xbe\xe5\xa4\x87|||\xe5\x90\xb8\xe6\xb0\xb4/\xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8',
+ 'productCompany': '',
+ 'productDetails': [],
+ 'productImagePath': 'http://www.wwmro.com/upload/store/goods/144/144_f06ae9485a536dde2ecf63fa74f21eab.jpg_max.jpg',
+ 'productIntro': [{'attrkey': '\xe5\xa4\x96\xe5\xa3\xb3\xe6\x9d\x90\xe8\xb4\xa8\xef\xbc\x9a',
+                   'keyname': '\xe4\xb8\x8d\xe9\x94\x88\xe9\x92\xa2'},
+                  {'attrkey': '\xe6\xb6\x88\xe8\x80\x97\xe7\x94\xb5\xe5\x8a\x9b(W)\xef\xbc\x9a',
+                   'keyname': '0-5000'},
+                  {'attrkey': '\xe6\xa1\xb6\xe5\xae\xb9\xe9\x87\x8f(L)\xef\xbc\x9a',
+                   'keyname': '0-90 90-180'},
+                  {'attrkey': '\xe5\xb8\xa6\xe9\x98\xb2\xe7\x88\x86\xe5\x8a\x9f\xe8\x83\xbd\xef\xbc\x9a',
+                   'keyname': '\xe5\x90\xa6'},
+                  {'attrkey': '\xe7\x94\xb5\xe6\xba\x90\xe7\xba\xbf\xe9\x95\xbf\xef\xbc\x9a',
+                   'keyname': '0-10'}],
+ 'productModel': '',
+ 'productName': '\xe5\xa4\x9a\xe7\x94\xa8\xe9\x80\x94\xe5\xb7\xa5\xe4\xb8\x9a\xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8Mini Bull+MTF\xe5\x8d\x95\xe7\x9b\xb8\xe9\xa9\xac\xe8\xbe\xbe\xe6\xbb\xa4\xe8\x8a\xaf\xe5\xa0\xb5\xe5\xa1\x9e\xe5\x92\x8c\xe7\x94\xb5\xe5\x8e\x8b\xe8\xad\xa6\xe5\x91\x8a\xe7\x81\xaf2400W230V\xe8\xbf\x87\xe6\xbb\xa4\xe9\x9d\xa2\xe7\xa7\xaf15000cm\xc2\xb2\xe5\x90\xb8\xe7\x89\xb9\xe4\xb9\x90M\xe7\xba\xa7\xe8\xbf\x87\xe6\xbb\xa4\xe5\x99\xa8',
+ 'productPack': [],
+ 'productPrice': '2047000.0',
+ 'productSpeci': [],
+ 'productUrl': 'http://www.wwmro.com/item-36454-144.html'}
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 19, in process_item
+    DataAnalysis(line)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 40, in DataAnalysis
+    logs.log("ScrapyStart:"+str(e))
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 97, in log
+    self.writeFile(tempTxt)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 77, in writeFile
+    f = open(filePath,"a+")
+IOError: [Errno 2] No such file or directory: 'commondity/public/logs/1479225600_ScrapyStart.log'
+ERROR: 11-16 10:51:45: scraper.py:234 * 6060 Error processing {'fileName': 'spider_wwmro_redis.json',
+ 'productAddres': '',
+ 'productBrand': '\xe5\x8f\xb2\xe4\xb8\xb9\xe5\x88\xa9/Stanley',
+ 'productClassification': '\xe7\xa3\xa8\xe5\x85\xb7\xe3\x80\x81\xe6\x9c\xba\xe5\xba\x8a\xe3\x80\x81\xe7\x84\x8a\xe6\x8e\xa5|||\xe7\x94\xb5\xe5\xad\x90\xe7\x84\x8a\xe6\x8e\xa5|||\xe7\x83\x99\xe9\x93\x81\xe5\xa4\xb4',
+ 'productCompany': '',
+ 'productDetails': [],
+ 'productImagePath': 'http://www.wwmro.com/upload/store/goods/121/121_fb29082a54d8ae247570e763e8998ca9.png_max.png',
+ 'productIntro': [{'attrkey': '\xc2\xa0', 'keyname': '\xc2\xa0'}],
+ 'productModel': 'STHT73733-8-23',
+ 'productName': '\xe5\x8f\xb2\xe4\xb8\xb9\xe5\x88\xa9 \xe5\xa4\x96\xe7\x83\xad\xe5\xbc\x8f\xe7\x94\xb5\xe7\x83\x99\xe9\x93\x8130W\xe7\x83\x99\xe9\x93\x81\xe5\xa4\xb4\xef\xbc\x88\xe5\xb0\x96\xe5\xa4\xb4\xef\xbc\x89 STHT73733-8-23',
+ 'productPack': [],
+ 'productPrice': '990.0',
+ 'productSpeci': [],
+ 'productUrl': 'http://www.wwmro.com/item-36811-121.html'}
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 19, in process_item
+    DataAnalysis(line)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 40, in DataAnalysis
+    logs.log("ScrapyStart:"+str(e))
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 97, in log
+    self.writeFile(tempTxt)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 77, in writeFile
+    f = open(filePath,"a+")
+IOError: [Errno 2] No such file or directory: 'commondity/public/logs/1479225600_ScrapyStart.log'
+ERROR: 11-16 10:52:23: scraper.py:234 * 6060 Error processing {'fileName': 'spider_wwmro_redis.json',
+ 'productAddres': '',
+ 'productBrand': '\xe7\xbe\xbf\xe7\xa7\x91/aegle',
+ 'productClassification': '\xe4\xb8\xaa\xe4\xba\xba\xe9\x98\xb2\xe6\x8a\xa4|||\xe9\x98\xb2\xe5\x9d\xa0\xe8\x90\xbd\xe7\x94\xa8\xe5\x85\xb7|||\xe5\xae\x89\xe5\x85\xa8\xe7\xbb\xb3/\xe6\x8a\x93\xe7\xbb\xb3\xe5\x99\xa8/\xe5\xae\x89\xe5\x85\xa8\xe9\x92\xa9/ \xe7\xbc\x93\xe5\x86\xb2\xe7\xbb\xb3\xef\xbc\x88\xe5\xb8\xa6\xef\xbc\x89',
+ 'productCompany': '',
+ 'productDetails': [],
+ 'productImagePath': 'http://www.wwmro.com/upload/store/goods/107/107_aa657d16afa3be59f0344fd85c3c9443.png_max.png',
+ 'productIntro': [{'attrkey': '\xe7\xb1\xbb\xe5\x9e\x8b\xef\xbc\x9a',
+                   'keyname': '\xe7\xbc\x93\xe5\x86\xb2\xe7\xb3\xbb\xe5\xb8\xa6'},
+                  {'attrkey': '\xe9\x95\xbf\xe5\xba\xa6(m)\xef\xbc\x9a',
+                   'keyname': '1.1-3'},
+                  {'attrkey': '\xe6\xa0\xb7\xe5\xbc\x8f\xef\xbc\x9a',
+                   'keyname': '\xe5\x8f\x8c\xe5\xa4\xb4'}],
+ 'productModel': '60816732',
+ 'productName': '\xe7\xbe\xbf\xe7\xa7\x91aegle (2M)\xe5\x8f\x8c\xe5\xa4\xb4\xe7\xbc\x93\xe5\x86\xb2\xe5\xb8\xa6\xef\xbc\x88\xe7\xbb\x87\xe5\xb8\xa6\xef\xbc\x89(\xe5\xb8\xa6\xe4\xb8\xa4\xe5\xa4\xa7\xe9\x92\xa9\xe4\xb8\x80\xe5\xb0\x8f\xe9\x92\xa9) 60816733',
+ 'productPack': [],
+ 'productPrice': '28290.0',
+ 'productSpeci': [],
+ 'productUrl': 'http://www.wwmro.com/item-23408-107.html'}
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 19, in process_item
+    DataAnalysis(line)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 40, in DataAnalysis
+    logs.log("ScrapyStart:"+str(e))
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 97, in log
+    self.writeFile(tempTxt)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 77, in writeFile
+    f = open(filePath,"a+")
+IOError: [Errno 2] No such file or directory: 'commondity/public/logs/1479225600_ScrapyStart.log'
+ERROR: 11-16 10:53:01: scraper.py:234 * 6060 Error processing {'fileName': 'spider_wwmro_redis.json',
+ 'productAddres': '',
+ 'productBrand': '',
+ 'productClassification': '\xe8\xbd\xa6\xe9\x97\xb4\xe8\xae\xbe\xe6\x96\xbd\xe3\x80\x81\xe6\xb8\x85\xe6\xb4\x81\xe7\x8e\xaf\xe4\xbf\x9d|||\xe7\x94\xb5\xe5\x8a\xa8\xe6\xb8\x85\xe6\xb4\x81\xe8\xae\xbe\xe5\xa4\x87|||\xe5\x90\xb8\xe6\xb0\xb4/\xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8',
+ 'productCompany': '',
+ 'productDetails': [],
+ 'productImagePath': 'http://www.wwmro.com/upload/store/goods/144/144_b083baad8b70f92ecda3cddff5cd95d6.jpg_max.jpg',
+ 'productIntro': [{'attrkey': '\xe5\xa4\x96\xe5\xa3\xb3\xe6\x9d\x90\xe8\xb4\xa8\xef\xbc\x9a',
+                   'keyname': '\xe4\xb8\x8d\xe9\x94\x88\xe9\x92\xa2'},
+                  {'attrkey': '\xe6\xb6\x88\xe8\x80\x97\xe7\x94\xb5\xe5\x8a\x9b(W)\xef\xbc\x9a',
+                   'keyname': '0-5000'},
+                  {'attrkey': '\xe6\xa1\xb6\xe5\xae\xb9\xe9\x87\x8f(L)\xef\xbc\x9a',
+                   'keyname': '0-90 90-180'},
+                  {'attrkey': '\xe5\xb8\xa6\xe9\x98\xb2\xe7\x88\x86\xe5\x8a\x9f\xe8\x83\xbd\xef\xbc\x9a',
+                   'keyname': '\xe5\x90\xa6'},
+                  {'attrkey': '\xe7\x94\xb5\xe6\xba\x90\xe7\xba\xbf\xe9\x95\xbf\xef\xbc\x9a',
+                   'keyname': '0-10'}],
+ 'productModel': '',
+ 'productName': 'Power-3000D\xe5\xb7\xa5\xe4\xb8\x9a\xe4\xb8\x89\xe9\xa9\xac\xe8\xbe\xbe\xe5\xb9\xb2\xe6\xb9\xbf\xe4\xb8\xa4\xe7\x94\xa8\xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8\xe5\x90\xb8\xe7\x89\xb9\xe4\xb9\x90\xe6\xa0\x87\xe5\x87\x86\xe9\x85\x8d\xe4\xbb\xb6\xe5\xb7\xa5\xe5\x8e\x82\xe7\x89\xa9\xe4\xb8\x9a\xe5\x8e\x82\xe6\x88\xbfDEPURECO \xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8\xe9\x94\x80\xe5\x94\xae \xe9\x85\x92\xe5\xba\x97\xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8\xe5\xb7\xa5\xe4\xb8\x9a\xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8\xe7\xbb\xb4\xe6\x8a\xa4\xe5\xb7\xa5\xe4\xb8\x9a\xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8\xe4\xbf\x9d\xe5\x85\xbb\xe6\x84\x8f\xe5\xa4\xa7\xe5\x88\xa9\xe9\x98\xb2\xe7\x88\x86\xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8\xe7\xad\x89',
+ 'productPack': [],
+ 'productPrice': '299000.0',
+ 'productSpeci': [],
+ 'productUrl': 'http://www.wwmro.com/item-23440-144.html'}
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 19, in process_item
+    DataAnalysis(line)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 40, in DataAnalysis
+    logs.log("ScrapyStart:"+str(e))
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 97, in log
+    self.writeFile(tempTxt)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 77, in writeFile
+    f = open(filePath,"a+")
+IOError: [Errno 2] No such file or directory: 'commondity/public/logs/1479225600_ScrapyStart.log'
+ERROR: 11-16 10:53:39: scraper.py:234 * 6060 Error processing {'fileName': 'spider_wwmro_redis.json',
+ 'productAddres': '',
+ 'productBrand': '\xe5\xb1\xb1\xe5\xba\xa6/SUNDOO',
+ 'productClassification': '\xe4\xbb\xaa\xe5\x99\xa8\xe4\xbb\xaa\xe8\xa1\xa8\xe3\x80\x81\xe5\xb7\xa5\xe4\xb8\x9a\xe6\x9a\x96\xe9\x80\x9a|||\xe5\x85\xb6\xe4\xbb\x96\xe4\xbb\xaa\xe5\x99\xa8\xe4\xbb\xaa\xe8\xa1\xa8|||\xe7\x9b\xb8\xe5\x85\xb3\xe6\xb5\x8b\xe8\xaf\x95\xe5\x8f\xb0/\xe6\x94\xaf\xe6\x9e\xb6',
+ 'productCompany': '',
+ 'productDetails': [],
+ 'productImagePath': 'http://www.wwmro.com/upload/store/goods/190/190_f7abe53c075307984013c89a39b56df2.jpg_max.jpg',
+ 'productIntro': [{'attrkey': '\xc2\xa0', 'keyname': '\xc2\xa0'}],
+ 'productModel': 'SDT 0.2-0.5',
+ 'productName': '\xe5\xb1\xb1\xe5\xba\xa6 SDT 1-5N\xe6\x89\x8b\xe5\x8a\xa8\xe6\x89\xad\xe7\x9f\xa9\xe8\xaf\x95\xe9\xaa\x8c\xe6\x9c\xba',
+ 'productPack': [],
+ 'productPrice': '1456000.0',
+ 'productSpeci': [],
+ 'productUrl': 'http://www.wwmro.com/item-37035-190.html'}
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 19, in process_item
+    DataAnalysis(line)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 40, in DataAnalysis
+    logs.log("ScrapyStart:"+str(e))
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 97, in log
+    self.writeFile(tempTxt)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 77, in writeFile
+    f = open(filePath,"a+")
+IOError: [Errno 2] No such file or directory: 'commondity/public/logs/1479225600_ScrapyStart.log'
+ERROR: 11-16 10:54:17: scraper.py:234 * 6060 Error processing {'fileName': 'spider_wwmro_redis.json',
+ 'productAddres': '',
+ 'productBrand': '\xe6\x96\xbd\xe8\x80\x90\xe5\xbe\xb7/Schneider',
+ 'productClassification': '\xe7\x94\xb5\xe5\xb7\xa5\xe7\x94\xb5\xe6\xb0\x94|||\xe7\x94\xb5\xe6\xb0\x94\xe6\x8e\xa7\xe5\x88\xb6|||\xe7\x9b\xb8\xe5\x85\xb3\xe9\x99\x84\xe4\xbb\xb6',
+ 'productCompany': '',
+ 'productDetails': [],
+ 'productImagePath': 'http://www.wwmro.com/upload/store/goods/196/196_bd9382a19e9e27cc0e0cfcfa6240d48d.png_max.png',
+ 'productIntro': [{'attrkey': '\xe7\xb1\xbb\xe5\x9e\x8b\xef\xbc\x9a',
+                   'keyname': '\xe4\xbf\x9d\xe6\x8a\xa4\xe6\xa8\xa1\xe5\x9d\x97\xe5\x8f\x8a\xe9\x99\x84\xe4\xbb\xb6'}],
+ 'productModel': 'RXM 021RB',
+ 'productName': '\xe6\x96\xbd\xe8\x80\x90\xe5\xbe\xb7Schneider \xe5\x8f\xaf\xe5\x8f\x98\xe7\x94\xb5\xe9\x98\xbb\xef\xbc\x8c\xe4\xb8\xad\xe9\x97\xb4\xe7\xbb\xa7\xe7\x94\xb5\xe5\x99\xa8\xe4\xbf\x9d\xe6\x8a\xa4\xe6\xa8\xa1\xe5\x9d\x97 RXM 021RB',
+ 'productPack': [],
+ 'productPrice': '3230.0',
+ 'productSpeci': [],
+ 'productUrl': 'http://www.wwmro.com/item-35154-196.html'}
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 19, in process_item
+    DataAnalysis(line)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 40, in DataAnalysis
+    logs.log("ScrapyStart:"+str(e))
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 97, in log
+    self.writeFile(tempTxt)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 77, in writeFile
+    f = open(filePath,"a+")
+IOError: [Errno 2] No such file or directory: 'commondity/public/logs/1479225600_ScrapyStart.log'
+ERROR: 11-16 10:54:55: scraper.py:234 * 6060 Error processing {'fileName': 'spider_wwmro_redis.json',
+ 'productAddres': '',
+ 'productBrand': '',
+ 'productClassification': '\xe8\xbd\xa6\xe9\x97\xb4\xe8\xae\xbe\xe6\x96\xbd\xe3\x80\x81\xe6\xb8\x85\xe6\xb4\x81\xe7\x8e\xaf\xe4\xbf\x9d|||\xe7\x94\xb5\xe5\x8a\xa8\xe6\xb8\x85\xe6\xb4\x81\xe8\xae\xbe\xe5\xa4\x87|||\xe5\x90\xb8\xe6\xb0\xb4/\xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8',
+ 'productCompany': '',
+ 'productDetails': [],
+ 'productImagePath': 'http://www.wwmro.com/upload/store/goods/144/144_ce9ccad4d198161addf4d9e24dfd4525.jpg_max.jpg',
+ 'productIntro': [{'attrkey': '\xe5\xa4\x96\xe5\xa3\xb3\xe6\x9d\x90\xe8\xb4\xa8\xef\xbc\x9a',
+                   'keyname': '\xe5\xa1\x91\xe6\x96\x99'},
+                  {'attrkey': '\xe6\xb6\x88\xe8\x80\x97\xe7\x94\xb5\xe5\x8a\x9b(W)\xef\xbc\x9a',
+                   'keyname': '0-5000'},
+                  {'attrkey': '\xe6\xa1\xb6\xe5\xae\xb9\xe9\x87\x8f(L)\xef\xbc\x9a',
+                   'keyname': '0-90 90-180'},
+                  {'attrkey': '\xe5\xb8\xa6\xe9\x98\xb2\xe7\x88\x86\xe5\x8a\x9f\xe8\x83\xbd\xef\xbc\x9a',
+                   'keyname': '\xe5\x90\xa6'},
+                  {'attrkey': '\xe7\x94\xb5\xe6\xba\x90\xe7\xba\xbf\xe9\x95\xbf\xef\xbc\x9a',
+                   'keyname': '0-10'}],
+ 'productModel': '',
+ 'productName': 'GS-1445CN 1600W max  45L \xe8\xb6\x85\xe5\xbc\xba\xe5\x8a\x9b\xe5\xb9\xb2\xe6\xb9\xbf\xe4\xb8\xa4\xe7\x94\xa8\xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8\xef\xbc\x88\xe5\xb7\xa5\xe4\xb8\x9a\xe7\x94\xa8\xef\xbc\x89',
+ 'productPack': [],
+ 'productPrice': '217470.0',
+ 'productSpeci': [],
+ 'productUrl': 'http://www.wwmro.com/item-37361-144.html'}
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 19, in process_item
+    DataAnalysis(line)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 40, in DataAnalysis
+    logs.log("ScrapyStart:"+str(e))
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 97, in log
+    self.writeFile(tempTxt)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 77, in writeFile
+    f = open(filePath,"a+")
+IOError: [Errno 2] No such file or directory: 'commondity/public/logs/1479225600_ScrapyStart.log'
+ERROR: 11-16 10:55:33: scraper.py:234 * 6060 Error processing {'fileName': 'spider_wwmro_redis.json',
+ 'productAddres': '',
+ 'productBrand': '\xe9\x87\x91\xe4\xbd\xb0\xe5\x88\xa9/Kimberly-clark',
+ 'productClassification': '\xe8\xbd\xa6\xe9\x97\xb4\xe8\xae\xbe\xe6\x96\xbd\xe3\x80\x81\xe6\xb8\x85\xe6\xb4\x81\xe7\x8e\xaf\xe4\xbf\x9d|||\xe7\xba\xb8/\xe6\xa3\x89\xe7\xb1\xbb\xe4\xba\xa7\xe5\x93\x81|||\xe5\xb7\xa5\xe4\xb8\x9a\xe6\x93\xa6\xe6\x8b\xad\xe7\xba\xb8\xe7\xb1\xbb',
+ 'productCompany': '',
+ 'productDetails': [],
+ 'productImagePath': 'http://www.wwmro.com/upload/store/goods/114/114_9136a125ddf950f919dedfc4523969e0.jpg_max.jpg',
+ 'productIntro': [{'attrkey': '\xe5\x8c\x85\xe8\xa3\x85\xef\xbc\x9a',
+                   'keyname': '\xe6\x8a\x98\xe5\x8f\xa0\xe8\xa3\x85\xef\xbc\x88\xe7\x9b\x92\xe8\xa3\x85/\xe8\xa2\x8b\xe8\xa3\x85\xef\xbc\x89'},
+                  {'attrkey': '\xe7\xb1\xbb\xe5\x88\xab\xef\xbc\x9a',
+                   'keyname': '\xe9\x80\x9a\xe7\x94\xa8\xe5\x9e\x8b\xe6\x93\xa6\xe8\xaf\x95\xe7\xba\xb8'}],
+ 'productModel': '83030',
+ 'productName': '\xe9\x87\x91\xe4\xbd\xb0\xe5\x88\xa9 Kimberly-Clark \xe9\x87\x91\xe7\x89\xb9* \xe5\xbc\xba\xe5\x8a\x9b\xe9\xab\x98\xe6\x95\x88\xe6\x93\xa6\xe6\x8b\xad\xe5\xb8\x83-\xe7\x99\xbd\xe8\x89\xb2\xef\xbc\x88\xe6\x8a\x98\xe5\x8f\xa0\xe5\xbc\x8f\xef\xbc\x89 94213',
+ 'productPack': [],
+ 'productPrice': '13860.0',
+ 'productSpeci': [],
+ 'productUrl': 'http://www.wwmro.com/item-9943-114.html'}
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 19, in process_item
+    DataAnalysis(line)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 40, in DataAnalysis
+    logs.log("ScrapyStart:"+str(e))
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 97, in log
+    self.writeFile(tempTxt)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 77, in writeFile
+    f = open(filePath,"a+")
+IOError: [Errno 2] No such file or directory: 'commondity/public/logs/1479225600_ScrapyStart.log'
+ERROR: 11-16 10:57:21: scraper.py:234 * 7608 Error processing {'fileName': 'spider_wwmro_redis.json',
+ 'productAddres': '',
+ 'productBrand': '',
+ 'productClassification': '\xe8\xbd\xa6\xe9\x97\xb4\xe8\xae\xbe\xe6\x96\xbd\xe3\x80\x81\xe6\xb8\x85\xe6\xb4\x81\xe7\x8e\xaf\xe4\xbf\x9d|||\xe7\x94\xb5\xe5\x8a\xa8\xe6\xb8\x85\xe6\xb4\x81\xe8\xae\xbe\xe5\xa4\x87|||\xe5\x90\xb8\xe6\xb0\xb4/\xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8',
+ 'productCompany': '',
+ 'productDetails': [],
+ 'productImagePath': 'http://www.wwmro.com/upload/store/goods/144/144_ce9ccad4d198161addf4d9e24dfd4525.jpg_max.jpg',
+ 'productIntro': [{'attrkey': '\xe5\xa4\x96\xe5\xa3\xb3\xe6\x9d\x90\xe8\xb4\xa8\xef\xbc\x9a',
+                   'keyname': '\xe5\xa1\x91\xe6\x96\x99'},
+                  {'attrkey': '\xe6\xb6\x88\xe8\x80\x97\xe7\x94\xb5\xe5\x8a\x9b(W)\xef\xbc\x9a',
+                   'keyname': '0-5000'},
+                  {'attrkey': '\xe6\xa1\xb6\xe5\xae\xb9\xe9\x87\x8f(L)\xef\xbc\x9a',
+                   'keyname': '0-90 90-180'},
+                  {'attrkey': '\xe5\xb8\xa6\xe9\x98\xb2\xe7\x88\x86\xe5\x8a\x9f\xe8\x83\xbd\xef\xbc\x9a',
+                   'keyname': '\xe5\x90\xa6'},
+                  {'attrkey': '\xe7\x94\xb5\xe6\xba\x90\xe7\xba\xbf\xe9\x95\xbf\xef\xbc\x9a',
+                   'keyname': '0-10'}],
+ 'productModel': '',
+ 'productName': 'GS-1445CN 1600W max  45L \xe8\xb6\x85\xe5\xbc\xba\xe5\x8a\x9b\xe5\xb9\xb2\xe6\xb9\xbf\xe4\xb8\xa4\xe7\x94\xa8\xe5\x90\xb8\xe5\xb0\x98\xe5\x99\xa8\xef\xbc\x88\xe5\xb7\xa5\xe4\xb8\x9a\xe7\x94\xa8\xef\xbc\x89',
+ 'productPack': [],
+ 'productPrice': '217470.0',
+ 'productSpeci': [],
+ 'productUrl': 'http://www.wwmro.com/item-37361-144.html'}
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 19, in process_item
+    DataAnalysis(line)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 40, in DataAnalysis
+    logs.log("ScrapyStart:"+str(e))
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 97, in log
+    self.writeFile(tempTxt)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 77, in writeFile
+    f = open(filePath,"a+")
+IOError: [Errno 2] No such file or directory: 'commondity/public/logs/1479225600_ScrapyStart.log'
+ERROR: 11-16 10:58:21: scraper.py:234 * 7608 Error processing {'fileName': 'spider_wwmro_redis.json',
+ 'productAddres': '',
+ 'productBrand': '\xe7\xbe\xbf\xe7\xa7\x91/aegle',
+ 'productClassification': '\xe5\xae\x89\xe5\x85\xa8\xe5\xae\x89\xe9\x98\xb2\xe8\xae\xbe\xe6\x96\xbd|||\xe5\xba\x94\xe6\x80\xa5\xe6\x95\x91\xe6\x8f\xb4/\xe6\xb6\x88\xe9\x98\xb2|||\xe6\xb4\x97\xe7\x9c\xbc\xe5\x99\xa8',
+ 'productCompany': '',
+ 'productDetails': [],
+ 'productImagePath': 'http://www.wwmro.com/upload/store/goods/107/107_94fb21f9cc7f901dc637a9e3af5aa387.png_max.png',
+ 'productIntro': [{'attrkey': '\xe6\x9d\x90\xe8\xb4\xa8\xef\xbc\x9a',
+                   'keyname': '\xe4\xb8\x8d\xe9\x94\x88\xe9\x92\xa2'},
+                  {'attrkey': '\xe7\xb1\xbb\xe5\x9e\x8b\xef\xbc\x9a',
+                   'keyname': '\xe7\xab\x8b\xe5\xbc\x8f'}],
+ 'productModel': '60902201',
+ 'productName': '\xe7\xbe\xbf\xe7\xa7\x91aegle \xe5\xa4\x8d\xe5\x90\x88\xe5\xbc\x8f\xe6\xb4\x97\xe7\x9c\xbc\xe5\x99\xa8(\xe4\xb8\x8d\xe9\x94\x88\xe9\x92\xa2\xe6\x9d\x90\xe6\x96\x99,\xe7\x8e\xaf\xe6\xb0\xa7\xe6\xa0\x91\xe8\x84\x82\xe6\xb6\x82\xe5\xb1\x82) 60902206',
+ 'productPack': [],
+ 'productPrice': '215250.0',
+ 'productSpeci': [],
+ 'productUrl': 'http://www.wwmro.com/item-23424-107.html'}
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 19, in process_item
+    DataAnalysis(line)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 40, in DataAnalysis
+    logs.log("ScrapyStart:"+str(e))
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 97, in log
+    self.writeFile(tempTxt)
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 77, in writeFile
+    f = open(filePath,"a+")
+IOError: [Errno 2] No such file or directory: 'commondity/public/logs/1479225600_ScrapyStart.log'
+ERROR: 11-16 11:56:25: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/344335.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:25: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/343815.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:25: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/343801.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:25: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/344660.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:25: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/344308.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:25: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/679136.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:25: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/346409.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:26: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/344148.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:26: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/343994.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:26: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/685182.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:26: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/343926.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:26: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/343983.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:26: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/344317.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:26: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/679128.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:26: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/685178.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/346099.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/343820.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/681129.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/344319.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/343883.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/344548.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/679133.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/683389.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/344560.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/346114.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/346553.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/683374.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/681123.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:40: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/546872.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:41: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/599354.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 11:56:41: scraper.py:158 * 9720 Spider error processing <GET http://www.iacmall.com/599348.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_iacmall_redis.py", line 182, in parse
+    file = open("data/"+filename, 'a+')
+IOError: [Errno 2] No such file or directory: 'data/spider_iacmall_redis.txt'
+ERROR: 11-16 12:02:43: scraper.py:214 * 3808 Error downloading <GET http://www.sssmro.com/goods-14001.html>: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+CRITICAL: 11-16 14:01:38: _legacy.py:154 * 10080 Unhandled error in Deferred:
+CRITICAL: 11-16 14:01:38: _legacy.py:154 * 10080 
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 90, in crawl
+    six.reraise(*exc_info)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 71, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 94, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "d:\python27\lib\site-packages\scrapy\spiders\__init__.py", line 50, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "D:\11.11\commondity\commondity\spiders\spider_isweek_redis.py", line 23, in __init__
+    print "......"+self.name+" members is "+self.url_members
+AttributeError: 'LezSpider' object has no attribute 'url_members'
+CRITICAL: 11-16 14:23:17: _legacy.py:154 * 10196 Unhandled error in Deferred:
+CRITICAL: 11-16 14:23:17: _legacy.py:154 * 10196 
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 90, in crawl
+    six.reraise(*exc_info)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 72, in crawl
+    self.engine = self._create_engine()
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 97, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "d:\python27\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.scraper = Scraper(crawler)
+  File "d:\python27\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "d:\python27\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "d:\python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 12, in <module>
+    from commondity.ScrapyFileSystem.ScrapyStart import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 2, in <module>
+    from lib.function import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\function.py", line 3, in <module>
+    from Log.logOutput import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 6, in <module>
+    from ..tempConfig import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\tempConfig.py", line 10
+    Redis={"host":"192.168.1.100","port":6379,db=0,pwd=""}
+                                                ^
+SyntaxError: invalid syntax
+CRITICAL: 11-16 14:31:09: _legacy.py:154 * 756 Unhandled error in Deferred:
+CRITICAL: 11-16 14:31:09: _legacy.py:154 * 756 
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 90, in crawl
+    six.reraise(*exc_info)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 72, in crawl
+    self.engine = self._create_engine()
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 97, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "d:\python27\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.scraper = Scraper(crawler)
+  File "d:\python27\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "d:\python27\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "d:\python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 12, in <module>
+    from commondity.ScrapyFileSystem.ScrapyStart import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 2, in <module>
+    from lib.function import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\function.py", line 3, in <module>
+    from Log.logOutput import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 6, in <module>
+    from ..tempConfig import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\tempConfig.py", line 10
+    Redis={"host":"192.168.1.100","port":6379,db=0,pwd=""}
+                                                ^
+SyntaxError: invalid syntax
+CRITICAL: 11-16 14:55:19: _legacy.py:154 * 8212 Unhandled error in Deferred:
+CRITICAL: 11-16 14:55:19: _legacy.py:154 * 8212 
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 90, in crawl
+    six.reraise(*exc_info)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 72, in crawl
+    self.engine = self._create_engine()
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 97, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "d:\python27\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.scraper = Scraper(crawler)
+  File "d:\python27\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "d:\python27\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "d:\python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 12, in <module>
+    from commondity.ScrapyFileSystem.ScrapyStart import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 2, in <module>
+    from lib.function import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\function.py", line 3, in <module>
+    from Log.logOutput import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 6, in <module>
+    from ..tempConfig import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\tempConfig.py", line 10
+    Redis={"host":"192.168.1.100","port":6379,db=0,pwd=""}
+                                                ^
+SyntaxError: invalid syntax
+CRITICAL: 11-16 14:55:46: _legacy.py:154 * 9480 Unhandled error in Deferred:
+CRITICAL: 11-16 14:55:46: _legacy.py:154 * 9480 
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 90, in crawl
+    six.reraise(*exc_info)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 72, in crawl
+    self.engine = self._create_engine()
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 97, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "d:\python27\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.scraper = Scraper(crawler)
+  File "d:\python27\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "d:\python27\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "d:\python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 12, in <module>
+    from commondity.ScrapyFileSystem.ScrapyStart import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 2, in <module>
+    from lib.function import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\function.py", line 3, in <module>
+    from Log.logOutput import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 6, in <module>
+    from ..tempConfig import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\tempConfig.py", line 10
+    Redis={"host":"192.168.1.100","port":6379,"db"=0,"pwd"=""}
+                                                  ^
+SyntaxError: invalid syntax
+CRITICAL: 11-16 14:57:05: _legacy.py:154 * 10128 Unhandled error in Deferred:
+CRITICAL: 11-16 14:57:05: _legacy.py:154 * 10128 
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 90, in crawl
+    six.reraise(*exc_info)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 72, in crawl
+    self.engine = self._create_engine()
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 97, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "d:\python27\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.scraper = Scraper(crawler)
+  File "d:\python27\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "d:\python27\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "d:\python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 12, in <module>
+    from commondity.ScrapyFileSystem.ScrapyStart import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 2, in <module>
+    from lib.function import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\function.py", line 3, in <module>
+    from Log.logOutput import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 6, in <module>
+    from ..tempConfig import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\tempConfig.py", line 10
+    Redis={"host":"192.168.1.230","port":6379,"db"=0,"pwd"=""}
+                                                  ^
+SyntaxError: invalid syntax
+CRITICAL: 11-16 14:57:53: _legacy.py:154 * 3820 Unhandled error in Deferred:
+CRITICAL: 11-16 14:57:53: _legacy.py:154 * 3820 
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 90, in crawl
+    six.reraise(*exc_info)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 72, in crawl
+    self.engine = self._create_engine()
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 97, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "d:\python27\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.scraper = Scraper(crawler)
+  File "d:\python27\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "d:\python27\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "d:\python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 12, in <module>
+    from commondity.ScrapyFileSystem.ScrapyStart import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 2, in <module>
+    from lib.function import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\function.py", line 3, in <module>
+    from Log.logOutput import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 6, in <module>
+    from ..tempConfig import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\tempConfig.py", line 10
+    Redis={"host":"192.168.1.230","port":6379,db=0,pwd=""}
+                                                ^
+SyntaxError: invalid syntax
+CRITICAL: 11-16 14:58:38: _legacy.py:154 * 9872 Unhandled error in Deferred:
+CRITICAL: 11-16 14:58:38: _legacy.py:154 * 9872 
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 90, in crawl
+    six.reraise(*exc_info)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 72, in crawl
+    self.engine = self._create_engine()
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 97, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "d:\python27\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.scraper = Scraper(crawler)
+  File "d:\python27\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "d:\python27\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "d:\python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 12, in <module>
+    from commondity.ScrapyFileSystem.ScrapyStart import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 2, in <module>
+    from lib.function import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\function.py", line 3, in <module>
+    from Log.logOutput import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Log\logOutput.py", line 6, in <module>
+    from ..tempConfig import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\tempConfig.py", line 10
+    Redis={"host":"192.168.1.230","port":6379,"db"=0,"pwd"=""}
+                                                  ^
+SyntaxError: invalid syntax
+ERROR: 11-16 15:15:05: scraper.py:158 * 3592 Spider error processing <GET http://www.8shop.cc/goods/127182.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_8shop_redis.py", line 59, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 58, in __init__
+    desired_capabilities=desired_capabilities)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 90, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 177, in start_session
+    response = self.execute(Command.NEW_SESSION, capabilities)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10061] >
+ERROR: 11-16 15:15:08: scraper.py:158 * 3592 Spider error processing <GET http://www.8shop.cc/goods/104324.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_8shop_redis.py", line 59, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:15:11: scraper.py:158 * 3592 Spider error processing <GET http://www.8shop.cc/goods/1467.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_8shop_redis.py", line 59, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:15:15: scraper.py:158 * 3592 Spider error processing <GET http://www.8shop.cc/goods/176.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_8shop_redis.py", line 59, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:15:18: scraper.py:158 * 3592 Spider error processing <GET http://www.8shop.cc/goods/164005.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_8shop_redis.py", line 59, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:15:21: scraper.py:158 * 3592 Spider error processing <GET http://www.8shop.cc/goods/66464.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_8shop_redis.py", line 59, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:27:16: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/566808> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 56, in parse
+    driver.get(response.url)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 248, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "d:\python27\lib\httplib.py", line 1074, in getresponse
+    response.begin()
+  File "d:\python27\lib\httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "d:\python27\lib\httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "d:\python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 10054] 
+ERROR: 11-16 15:27:19: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/566774> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 54, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:27:21: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/570123> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 54, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:27:23: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/564157> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 54, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:27:26: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/565382> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 54, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 86, in start
+    self.assert_process_still_running()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 99, in assert_process_still_running
+    % (self.path, return_code)
+WebDriverException: Message: Service phantomjs unexpectedly exited. Status code was: -1073741510
+
+ERROR: 11-16 15:27:30: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/566157> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 56, in parse
+    driver.get(response.url)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 248, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "d:\python27\lib\httplib.py", line 1074, in getresponse
+    response.begin()
+  File "d:\python27\lib\httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "d:\python27\lib\httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "d:\python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 10054] 
+ERROR: 11-16 15:27:33: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/565152> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 54, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 86, in start
+    self.assert_process_still_running()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 99, in assert_process_still_running
+    % (self.path, return_code)
+WebDriverException: Message: Service phantomjs unexpectedly exited. Status code was: -1073741510
+
+ERROR: 11-16 15:27:36: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/565837> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 54, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 86, in start
+    self.assert_process_still_running()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 99, in assert_process_still_running
+    % (self.path, return_code)
+WebDriverException: Message: Service phantomjs unexpectedly exited. Status code was: -1073741510
+
+ERROR: 11-16 15:27:42: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/566775> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 56, in parse
+    driver.get(response.url)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 248, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "d:\python27\lib\httplib.py", line 1074, in getresponse
+    response.begin()
+  File "d:\python27\lib\httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "d:\python27\lib\httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "d:\python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 10054] 
+ERROR: 11-16 15:27:45: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/565393> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 54, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:27:48: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/563601> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 54, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 86, in start
+    self.assert_process_still_running()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 99, in assert_process_still_running
+    % (self.path, return_code)
+WebDriverException: Message: Service phantomjs unexpectedly exited. Status code was: -1073741510
+
+ERROR: 11-16 15:29:19: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/565839> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 56, in parse
+    driver.get(response.url)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 248, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "d:\python27\lib\httplib.py", line 1074, in getresponse
+    response.begin()
+  File "d:\python27\lib\httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "d:\python27\lib\httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "d:\python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 10054] 
+ERROR: 11-16 15:29:22: scraper.py:158 * 8512 Spider error processing <GET http://www.vipmro.com/product/562201> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_vipmro_redis.py", line 54, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:30:47: scraper.py:158 * 6788 Spider error processing <GET http://www.rolymro.com/ProductCenter.php?Type=Product_details&Product_id=18245> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_rolymro_redis.py", line 140, in parse
+    data2['keyname']=details[num_one].encode('utf-8').replace(":","\/").replace("\n","").replace("\t","").replace("\b","").strip()
+IndexError: list index out of range
+ERROR: 11-16 15:31:11: scraper.py:158 * 6788 Spider error processing <GET http://www.rolymro.com/ProductCenter.php?Type=Product_details&Product_id=20470> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_rolymro_redis.py", line 140, in parse
+    data2['keyname']=details[num_one].encode('utf-8').replace(":","\/").replace("\n","").replace("\t","").replace("\b","").strip()
+IndexError: list index out of range
+ERROR: 11-16 15:33:17: robotstxt.py:80 * 7136 Error downloading <GET http://www.mctmall.cn/robots.txt>: [<twisted.python.failure.Failure twisted.web._newclient.ParseError: (u'wrong number of parts', 'HTTP/1.1 404')>]
+ResponseFailed: [<twisted.python.failure.Failure twisted.web._newclient.ParseError: (u'wrong number of parts', 'HTTP/1.1 404')>]
+ERROR: 11-16 15:34:57: scraper.py:158 * 7136 Spider error processing <GET http://www.mctmall.cn/product-26134.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_mctmall_redis.py", line 54, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:38:34: scraper.py:158 * 9824 Spider error processing <GET http://b2b.hc360.com/supplyself/162535296.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_hc360_redis.py", line 56, in parse
+    driver.get(response.url)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 248, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "d:\python27\lib\httplib.py", line 1074, in getresponse
+    response.begin()
+  File "d:\python27\lib\httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "d:\python27\lib\httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "d:\python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 10054] 
+ERROR: 11-16 15:38:36: scraper.py:158 * 9824 Spider error processing <GET http://b2b.hc360.com/supplyself/514361057.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_hc360_redis.py", line 55, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:38:38: scraper.py:158 * 9824 Spider error processing <GET http://b2b.hc360.com/supplyself/524695405.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_hc360_redis.py", line 55, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:38:40: scraper.py:158 * 9824 Spider error processing <GET http://b2b.hc360.com/supplyself/592367395.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_hc360_redis.py", line 55, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:38:42: scraper.py:158 * 9824 Spider error processing <GET http://b2b.hc360.com/supplyself/416214303.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_hc360_redis.py", line 55, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:38:44: scraper.py:158 * 9824 Spider error processing <GET http://b2b.hc360.com/supplyself/217313367.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_hc360_redis.py", line 55, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:38:46: scraper.py:158 * 9824 Spider error processing <GET http://b2b.hc360.com/supplyself/578032923.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_hc360_redis.py", line 55, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:38:49: scraper.py:158 * 9824 Spider error processing <GET http://b2b.hc360.com/supplyself/474867987.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_hc360_redis.py", line 55, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 15:49:26: scraper.py:158 * 5840 Spider error processing <GET http://www.huaaomro.com/goods-172.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_huaaomro_redis.py", line 61, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 58, in __init__
+    desired_capabilities=desired_capabilities)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 90, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 177, in start_session
+    response = self.execute(Command.NEW_SESSION, capabilities)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10061] >
+ERROR: 11-16 16:00:43: robotstxt.py:80 * 11052 Error downloading <GET http://www.4006770558.com/robots.txt>: DNS lookup failed: address 'www.4006770558.com' not found: [Errno 11002] getaddrinfo failed.
+DNSLookupError: DNS lookup failed: address 'www.4006770558.com' not found: [Errno 11002] getaddrinfo failed.
+ERROR: 11-16 16:10:59: scraper.py:158 * 5708 Spider error processing <GET http://www.zkh360.com/zkh_product_group/86815521.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 37, in parse
+    driver.get(response.url)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 248, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "d:\python27\lib\httplib.py", line 1074, in getresponse
+    response.begin()
+  File "d:\python27\lib\httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "d:\python27\lib\httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "d:\python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 10054] 
+ERROR: 11-16 16:11:02: scraper.py:158 * 5708 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100372793.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:04: scraper.py:158 * 5708 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100083165.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:06: scraper.py:158 * 5708 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100373316.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:08: scraper.py:158 * 5708 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100422230.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:10: scraper.py:158 * 5708 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100404065.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:12: scraper.py:158 * 5708 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100202781.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:40: scraper.py:158 * 7960 Spider error processing <GET http://www.zkh360.com/zkh_product_group/86774381.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 37, in parse
+    driver.get(response.url)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 248, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "d:\python27\lib\httplib.py", line 1074, in getresponse
+    response.begin()
+  File "d:\python27\lib\httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "d:\python27\lib\httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "d:\python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 10054] 
+ERROR: 11-16 16:11:42: scraper.py:158 * 7960 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100202781.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:44: scraper.py:158 * 7960 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100422230.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:46: scraper.py:158 * 7960 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100102135.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:48: scraper.py:158 * 7960 Spider error processing <GET http://www.zkh360.com/zkh_product_group/73164694.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:50: scraper.py:158 * 7960 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100161753.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:52: scraper.py:158 * 7960 Spider error processing <GET http://www.zkh360.com/zkh_product_group/94384323.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:55: scraper.py:158 * 7960 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100083165.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:11:57: scraper.py:158 * 7960 Spider error processing <GET http://www.zkh360.com/zkh_product_group/78684302.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-16 16:19:35: scraper.py:214 * 4516 Error downloading <GET http://www.sssmro.com/goods-13999.html>: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+ERROR: 11-16 16:19:35: scraper.py:214 * 4516 Error downloading <GET http://www.sssmro.com/goods-14001.html>: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+ERROR: 11-16 16:19:35: scraper.py:214 * 4516 Error downloading <GET http://www.sssmro.com/goods-13998.html>: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]

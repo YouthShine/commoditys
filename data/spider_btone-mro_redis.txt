@@ -1,0 +1,427 @@
+
+productUrl:http://www.btone-mro.com/product/4928.html
+productIntro:
+两类计数器的应用领域是非常不同的，例如记录机器、系统或楼宇管理系统的运行时间，以及一般体积流量的脉冲计数、系统和机器的起动顺序、起动周期或产品数量的登记。
+productPack:
+productSpeci:
+MECHANICAL TIME COUNTER 10-27 V DC MECHANICAL TIME COUNTER 24 V, 50 HZ MECHANICAL TIME COUNTER 115 V, 50 HZ
+MECHANICAL TIME COUNTER 230 V, 50 HZ MECHANICAL TIME COUNTER 115 V, 60 HZ MECHANICAL TIME COUNTER 230 V, 60 HZ
+MECHANICAL PULSE COUNTER 24 V DC MECHANICAL PULSE COUNTER 24 V, 50 HZ MECHANICAL PULSE COUNTER 230 V, 50 HZ
+ELECTRONIC TIME COUNTER DC 12-150V, 24-240V, 50HZ ELECTRONIC TIME COUNTER DC 12-150V, 24-240V, 50HZ ELECTRICAL RESET
+ELECTRONIC TIME COUNTER DC 12-150V, 24-240V, 50HZ ELECTRICAL A. MECHANICAL RESET ELECTRONIC PULSE COUNTER DC 12-150V, 24-240V, 50HZ ELECTRICAL A. MECHANICAL RESET
+
+productUrl:http://www.btone-mro.com/product/7914.html
+productIntro:
+ Liquisys M CPM223 产品描述 Liquisys M CPM 223/253变送器采用模块化设计，应用广泛。基本型变送其提供简单的测量和报警功能，扩展功能软件和硬件模块化后可以应用于特殊的场合，如果需要，可使用扩展模块。
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/11646.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/26682.html
+productIntro:
+西门子风阀执行器GCA326.1E
+§广州市丙通电子元件有限公司极大供应全系列西门子风阀执行器，原装正品，优势价格，大量现货，欢迎登陆BTONE-MRO选购
+§西门子风阀执行器采用低功耗电机，使用极低能量提供定位力，最高效化实现最佳通风。
+§西门子风阀执行器采用静态测量值采集方式，降低能量损耗。
+§西门子风阀执行器通过自定心阀轴接头简化安装和调试，易于安装。
+§西门子风阀执行器独具坚固外壳，抗压能力强，可适应恶劣工作环境，从而工作寿命长。
+§工作电压AC/DC 24 V  AC 230 V,带两个辅助开关
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/19237.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+BTONE-MRO工业品超市，专业的销售工程师队伍，真诚助你产品选型、技术问题解答。
+
+productUrl:http://www.btone-mro.com/product/19223.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+BTONE-MRO工业品超市，专业的销售工程师队伍，真诚助你产品选型、技术问题解答。
+
+productUrl:http://www.btone-mro.com/product/8410.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/8420.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/10988.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/9423.html
+productIntro:
+■产品信息:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/61573.html
+productIntro:
+台式精密压力表可作为标准器用来校验各类压力仪表及供科研部门和工业生产中精确测量气体压力。其中0～40kPa仪表适用于检验各种血压计和血压表。
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/18257.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+广州市丙通电子元件有限公司拥有专业的销售工程师队伍。销售工程师真诚助你产品选型、技术问题解答：86-020-62958688.
+
+productUrl:http://www.btone-mro.com/product/9420.html
+productIntro:
+■产品信息:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/59545.html
+productIntro:
+ 
+productPack:
+BTONEMRO产品标准包装：珍珠棉（内）+纸箱（外）
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/59555.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/62537.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/26728.html
+productIntro:
+§GDB系列风阀执行器(无弹簧复位) 125Nm 约0.8 平方米 风阀面积150 s运转时间
+§GLB系列风阀执行器(无弹簧复位) 250Nm 约1.5平方米 风阀面积 150 s运转时间
+§GEB系列风阀执行器(无弹簧复位)400Nm 约3平方米 风阀面积 150 s运转时间
+§GEB系列风阀执行器(无弹簧复位)550Nm 约4平方米 风阀面积150 s运转时间
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/26712.html
+productIntro:
+
+西门子风阀执行器GBB161.2E
+§广州市丙通电子元件有限公司极大供应全系列西门子风阀执行器，原装正品，优势价格，大量现货，欢迎登陆BTONE-MRO选购
+§西门子风阀执行器采用低功耗电机，使用极低能量提供定位力，最高效化实现最佳通风。
+§西门子风阀执行器采用静态测量值采集方式，降低能量损耗。
+§西门子风阀执行器通过自定心阀轴接头简化安装和调试，易于安装。
+§西门子风阀执行器独具坚固外壳，抗压能力强，可适应恶劣工作环境，从而工作寿命长。
+§工作电压AC/DC 24 V  AC 230 V ,圆形阀轴适用尺寸8--25.6mm, 方形风阀适用尺寸6--18mm;
+§GDB系列风阀执行器(无弹簧复位) 125Nm 约0.8 平方米 风阀面积150 s运转时间
+§GLB系列风阀执行器(无弹簧复位) 250Nm 约1.5平方米 风阀面积 150 s运转时间
+§GEB系列风阀执行器(无弹簧复位)400Nm 约3平方米 风阀面积 150 s运转时间
+§GEB系列风阀执行器(无弹簧复位)550Nm 约4平方米 风阀面积150 s运转时间
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/32627.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/20112.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+BTONE-MRO工业品超市，专业的销售工程师队伍，真诚助你产品选型、技术问题解答。
+
+productUrl:http://www.btone-mro.com/product/8446.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/18269.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+广州市丙通电子元件有限公司拥有专业的销售工程师队伍。销售工程师真诚助你产品选型、技术问题解答：86-020-62958688.
+
+productUrl:http://www.btone-mro.com/product/26711.html
+productIntro:
+
+西门子风阀执行器GBB331.2E
+§广州市丙通电子元件有限公司极大供应全系列西门子风阀执行器，原装正品，优势价格，大量现货，欢迎登陆BTONE-MRO选购
+§西门子风阀执行器采用低功耗电机，使用极低能量提供定位力，最高效化实现最佳通风。
+§西门子风阀执行器采用静态测量值采集方式，降低能量损耗。
+§西门子风阀执行器通过自定心阀轴接头简化安装和调试，易于安装。
+§西门子风阀执行器独具坚固外壳，抗压能力强，可适应恶劣工作环境，从而工作寿命长。
+§工作电压AC/DC 24 V  AC 230 V ,圆形阀轴适用尺寸8--25.6mm, 方形风阀适用尺寸6--18mm;
+§GDB系列风阀执行器(无弹簧复位) 125Nm 约0.8 平方米 风阀面积150 s运转时间
+§GLB系列风阀执行器(无弹簧复位) 250Nm 约1.5平方米 风阀面积 150 s运转时间
+§GEB系列风阀执行器(无弹簧复位)400Nm 约3平方米 风阀面积 150 s运转时间
+§GEB系列风阀执行器(无弹簧复位)550Nm 约4平方米 风阀面积150 s运转时间
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/2587.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/12457.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+丙通销售工程师真诚助你产品选型，技术问题解答。
+
+productUrl:http://www.btone-mro.com/product/10924.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/4202.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/32634.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/4726.html
+productIntro:
+西门子生产的楼梯间照明定时器使用按下锁定滚轮可以准确设定所需的时间，而无需使用工具。采用现代四线安装，楼梯井照明定时器也可以再次按下。维持型照明开关可以避免反复的按下操作（例如在搬家期间）。
+productPack:
+productSpeci:
+工作电压  AC230V
+ 
+允许电流   6（3）A
+ 
+频率  50/60Hz
+ 功耗  3VA
+ 
+ 数字输出 无电压 节点转换
+ 备存 72h
+ 显示  LCD
+ 尺寸 79*106*56mm
+调试方法：
+同时按 + 和 – 键 5 秒进行时间及定时器参数值设置。
+按 +/- 键至 TIME 显示，按 SEL 键。 按 +/- 键选择 12hr 或 24hr 时间显示格式，按 SEL键 保存。 用 +/-键选择星期 ， 按 SEL 键保存。用 +/- 键选择当前时间， 按 SEL 键保存。
+按 +/- 键至 CTDN 显示，按 SEL 键。用 +/- 键选择定时器接通动作时间， 按 SEL 键保存。端子 M-D1 间的瞬时闭合信号会触发输出 Q 在预设的接通时间内保持接通。一旦完成时间控制器及倒计时定时器的设置，用 +/- 键选择 EXIT，按 SEL 显示主屏幕。SEH62.1 允许多达 8 个编程的开/关时间段。每一段都可被安排到屏幕上显示的某一天或某几天的组合。
+按 +/- 键可查看已编程的开/关时间段。 按 SEL 键设置第一个程序段。 用+/- 键选择某几天的组合， 按 SEL 键保存。用+/- 键选择接通时间， 按 SEL 键保存。 重复以上过程设置断开时间和其它开/关程序段。
+在主屏幕上可通过按 +/- 键快速增加或减少当前时间一小时，按 SEL 键， 屏上会显示DS。 选择 DS+1 则增加当前时间 1 小时，选择 DS-1 则减小当前时间 1 小时，按 SEL 键保存。 
+
+productUrl:http://www.btone-mro.com/product/3743.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/12449.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+丙通销售工程师真诚助你产品选型，技术问题解答。
+
+productUrl:http://www.btone-mro.com/product/10851.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/9317.html
+productIntro:
+■产品信息:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/32621.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/13112.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+广州丙通销售工程师真诚助你产品选型、技术问题解答。
+
+productUrl:http://www.btone-mro.com/product/2589.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/12453.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+丙通销售工程师真诚助你产品选型，技术问题解答。
+
+productUrl:http://www.btone-mro.com/product/29995.html
+productIntro:
+型号               材料号
+CM-ENEMIN        10012578
+CM-ENE MAX        10012577
+CM-ENS            10012477
+CM-ENS up/down    10012478
+CM-ENN up/down    10012489
+◇温馨提示：更多相关ABB液位监视器（技术参数，价格查询，货期确认等），请联系BTONE-MRO专业的销售工程师，真诚为您服务。
+
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/15526.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+广州市丙通电子元件有限公司拥有专业的销售工程师队伍。销售工程师真诚助你产品选型、技术问题解答！
+
+productUrl:http://www.btone-mro.com/product/13103.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+广州丙通销售工程师真诚助你产品选型、技术问题解答。
+
+productUrl:http://www.btone-mro.com/product/32083.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/3748.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/61970.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/229.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/10979.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/10994.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/61568.html
+productIntro:
+ 
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/10707.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/13226.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+丙通销售工程师真诚助你产品选型、技术问题解答。咨询热线4006-822-663.
+
+productUrl:http://www.btone-mro.com/product/12515.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/13100.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+广州丙通销售工程师真诚助你产品选型、技术问题解答。
+
+productUrl:http://www.btone-mro.com/product/4274.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/10821.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/63421.html
+productIntro:
+烟气：烟道CO和环境CO最大值、可互换式传感器O2和CO-H2、过量空气系数、不完全燃烧热损失、效率>100%
+压力：差压测量、抽压测量
+温度：环境温度、烟气温度、温度相差值、DHW温度(2通道热电偶)、露点温度
+其他：15种预设置燃料可选、使用者可自行添加5种燃料、自动测量、不透明指数
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/8373.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/13227.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+丙通销售工程师真诚助你产品选型、技术问题解答。咨询热线4006-822-663.
+
+productUrl:http://www.btone-mro.com/product/8445.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/184.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/8413.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/18251.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+广州市丙通电子元件有限公司拥有专业的销售工程师队伍。销售工程师真诚助你产品选型、技术问题解答：86-020-62958688.
+
+productUrl:http://www.btone-mro.com/product/9462.html
+productIntro:
+■产品概述:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/62533.html
+productIntro:
+productPack:
+productSpeci:
+
+productUrl:http://www.btone-mro.com/product/18267.html
+productIntro:
+productPack:
+BTONE-MRO 产品标准包装：产品+珍珠棉+纸箱包装。具体包装以实物为准。
+productSpeci:
+广州市丙通电子元件有限公司拥有专业的销售工程师队伍。销售工程师真诚助你产品选型、技术问题解答：86-020-62958688.

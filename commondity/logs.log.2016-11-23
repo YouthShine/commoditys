@@ -1,0 +1,305 @@
+INFO: 11-23 15:23:10: middleware.py:53 * 9444 Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: 11-23 15:23:11: middleware.py:53 * 9444 Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: 11-23 15:23:12: middleware.py:53 * 9444 Enabled item pipelines:
+['commondity.pipelines.image.base_pipe.BasePipeline']
+INFO: 11-23 15:23:12: engine.py:257 * 9444 Spider opened
+INFO: 11-23 15:23:12: logstats.py:47 * 9444 Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: 11-23 15:24:43: crawler.py:247 * 9444 Received SIGINT, shutting down gracefully. Send again to force 
+ERROR: 11-23 15:24:43: scraper.py:158 * 9444 Spider error processing <GET http://www.zkh360.com/zkh_product_group/78684302.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 37, in parse
+    driver.get(response.url)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 248, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "d:\python27\lib\httplib.py", line 1074, in getresponse
+    response.begin()
+  File "d:\python27\lib\httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "d:\python27\lib\httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "d:\python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 10054] 
+INFO: 11-23 15:24:44: crawler.py:254 * 9444 Received SIGINT twice, forcing unclean shutdown
+ERROR: 11-23 15:24:45: scraper.py:158 * 9444 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100083165.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-23 15:24:47: scraper.py:158 * 9444 Spider error processing <GET http://www.zkh360.com/zkh_product_group/94384323.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-23 15:24:49: scraper.py:158 * 9444 Spider error processing <GET http://www.zkh360.com/zkh_product_group/73164694.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-23 15:24:51: scraper.py:158 * 9444 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100083136.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-23 15:24:53: scraper.py:158 * 9444 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100102135.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-23 15:24:56: scraper.py:158 * 9444 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100202781.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-23 15:24:58: scraper.py:158 * 9444 Spider error processing <GET http://www.zkh360.com/zkh_product_group/100403708.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\spider_zkh360_redis.py", line 35, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+INFO: 11-23 15:24:58: engine.py:296 * 9444 Closing spider (shutdown)
+INFO: 11-23 15:24:58: logstats.py:47 * 9444 Crawled 22 pages (at 22 pages/min), scraped 10 items (at 10 items/min)
+INFO: 11-23 15:25:13: middleware.py:53 * 6424 Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: 11-23 15:25:13: middleware.py:53 * 6424 Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: 11-23 15:25:14: middleware.py:53 * 6424 Enabled item pipelines:
+['commondity.pipelines.image.base_pipe.BasePipeline']
+INFO: 11-23 15:25:14: engine.py:257 * 6424 Spider opened
+INFO: 11-23 15:25:14: logstats.py:47 * 6424 Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: 11-23 15:25:27: crawler.py:247 * 6424 Received SIGINT, shutting down gracefully. Send again to force 
+INFO: 11-23 15:25:27: engine.py:296 * 6424 Closing spider (shutdown)
+INFO: 11-23 15:25:27: crawler.py:254 * 6424 Received SIGINT twice, forcing unclean shutdown
+INFO: 11-23 15:27:40: middleware.py:53 * 304 Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: 11-23 15:27:40: middleware.py:53 * 304 Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: 11-23 15:27:40: middleware.py:53 * 304 Enabled item pipelines:
+['commondity.pipelines.image.base_pipe.BasePipeline']
+INFO: 11-23 15:27:40: engine.py:257 * 304 Spider opened
+INFO: 11-23 15:27:40: logstats.py:47 * 304 Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: 11-23 15:28:40: logstats.py:47 * 304 Crawled 194 pages (at 194 pages/min), scraped 190 items (at 190 items/min)
+INFO: 11-23 15:28:56: crawler.py:247 * 304 Received SIGINT, shutting down gracefully. Send again to force 
+INFO: 11-23 15:28:56: crawler.py:254 * 304 Received SIGINT twice, forcing unclean shutdown
+INFO: 11-23 15:28:57: engine.py:296 * 304 Closing spider (shutdown)
+INFO: 11-23 15:29:14: middleware.py:53 * 3528 Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: 11-23 15:29:14: middleware.py:53 * 3528 Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: 11-23 15:29:14: middleware.py:53 * 3528 Enabled item pipelines:
+['commondity.pipelines.image.base_pipe.BasePipeline']
+INFO: 11-23 15:29:14: engine.py:257 * 3528 Spider opened
+INFO: 11-23 15:29:14: logstats.py:47 * 3528 Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: 11-23 15:30:08: crawler.py:247 * 3528 Received SIGINT, shutting down gracefully. Send again to force 
+INFO: 11-23 15:30:09: crawler.py:254 * 3528 Received SIGINT twice, forcing unclean shutdown
+INFO: 11-23 15:30:11: engine.py:296 * 3528 Closing spider (shutdown)
+INFO: 11-23 15:30:35: middleware.py:53 * 4324 Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: 11-23 15:30:35: middleware.py:53 * 4324 Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: 11-23 15:30:35: middleware.py:53 * 4324 Enabled item pipelines:
+['commondity.pipelines.image.base_pipe.BasePipeline']
+INFO: 11-23 15:30:35: engine.py:257 * 4324 Spider opened
+INFO: 11-23 15:30:35: logstats.py:47 * 4324 Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: 11-23 15:30:40: crawler.py:247 * 4324 Received SIGINT, shutting down gracefully. Send again to force 
+INFO: 11-23 15:30:40: crawler.py:254 * 4324 Received SIGINT twice, forcing unclean shutdown

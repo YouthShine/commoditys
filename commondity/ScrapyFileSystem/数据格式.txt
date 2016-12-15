@@ -1,0 +1,31 @@
+﻿"category_name_one": 一级分类,v
+"sales_volume":销售量  默认0,v
+"main_pic_url":图片url,v
+"provider_id":供应商ID  默认0,v
+"commodity_attr": [{v
+"attrkey": 商品属性key,
+"attrname":商品属性值
+}{
+"attrkey": 商品属性key,
+"attrname":商品属性值
+]
+"brand_name":品牌名称v
+"commodity_name"商品名称,v
+"platform_id": 发布平台 默认0v
+"area": 地区,v
+"credit": 信用度,v
+"logo_url": 品牌url,v
+"private_price": 私有价格 默认[],v
+"category_id_two":二级分类id v
+"brand_id":品牌ID,v
+"category_id_one": 一级分类id,v
+"category_id": 三级分类id,v
+"is_display": 是否显示 默认true,v
+"commodity_id":商品id,v
+"price":价格,v
+"category_name_two": 二级分类名称v
+"category_name":三级分类名称,v
+"payment_cycle": 付款周期默认 "",v
+"is_recommend": 是否是热门推荐 默认flase,v
+"payment_method" : 支付方式 默认"",v
+"provider_name":供应商名称v

@@ -1,0 +1,701 @@
+CRITICAL: 11-10 17:05:50: _legacy.py:154 * 1204 Unhandled error in Deferred:
+CRITICAL: 11-10 17:05:50: _legacy.py:154 * 1204 
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 1128, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 90, in crawl
+    six.reraise(*exc_info)
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 72, in crawl
+    self.engine = self._create_engine()
+  File "d:\python27\lib\site-packages\scrapy\crawler.py", line 97, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "d:\python27\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.scraper = Scraper(crawler)
+  File "d:\python27\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "d:\python27\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "d:\python27\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "d:\python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\11.11\commondity\commondity\pipelines\image\base_pipe.py", line 12, in <module>
+    from commondity.ScrapyFileSystem.ScrapyStart import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\ScrapyStart.py", line 2, in <module>
+    from lib.function import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\function.py", line 5, in <module>
+    from Mongodb.mongodbConnect import *
+  File "D:\11.11\commondity\commondity\ScrapyFileSystem\lib\Mongodb\mongodbConnect.py", line 7, in <module>
+    import pymongo
+ImportError: No module named pymongo
+ERROR: 11-10 17:11:47: scraper.py:158 * 7748 Spider error processing <GET http://www.91yilong.com/category-678-b0.html> (referer: http://www.91yilong.com/catalog.php)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\91yilong_spider.py", line 48, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 17:11:49: scraper.py:158 * 7748 Spider error processing <GET http://www.91yilong.com/category-681-b0.html> (referer: http://www.91yilong.com/catalog.php)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\91yilong_spider.py", line 48, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 17:11:51: scraper.py:158 * 7748 Spider error processing <GET http://www.91yilong.com/category-707-b0.html> (referer: http://www.91yilong.com/catalog.php)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\91yilong_spider.py", line 48, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 17:11:54: scraper.py:158 * 7748 Spider error processing <GET http://www.91yilong.com/category-593-b0.html> (referer: http://www.91yilong.com/catalog.php)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\91yilong_spider.py", line 48, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 17:46:33: scraper.py:158 * 12236 Spider error processing <GET http://www.ispek.cn/list/1.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\ispek_spider.py", line 61, in parse
+    commodityUrl=commodityUrl[0]
+IndexError: list index out of range
+ERROR: 11-10 17:46:34: scraper.py:158 * 12236 Spider error processing <GET http://www.ispek.cn/list/7.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\ispek_spider.py", line 61, in parse
+    commodityUrl=commodityUrl[0]
+IndexError: list index out of range
+ERROR: 11-10 17:46:34: scraper.py:158 * 12236 Spider error processing <GET http://www.ispek.cn/list/5.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\ispek_spider.py", line 61, in parse
+    commodityUrl=commodityUrl[0]
+IndexError: list index out of range
+ERROR: 11-10 17:46:55: scraper.py:158 * 6472 Spider error processing <GET http://www.ispek.cn/list/1.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\ispek_spider.py", line 61, in parse
+    commodityUrl=commodityUrl[0]
+IndexError: list index out of range
+ERROR: 11-10 17:46:55: scraper.py:158 * 6472 Spider error processing <GET http://www.ispek.cn/list/7.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\ispek_spider.py", line 61, in parse
+    commodityUrl=commodityUrl[0]
+IndexError: list index out of range
+ERROR: 11-10 17:46:55: scraper.py:158 * 6472 Spider error processing <GET http://www.ispek.cn/list/5.html> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\ispek_spider.py", line 61, in parse
+    commodityUrl=commodityUrl[0]
+IndexError: list index out of range
+ERROR: 11-10 17:48:06: scraper.py:158 * 10588 Spider error processing <GET http://www.zkh360.com//Product/SearchProduct?pageIndex=3> (referer: http://www.zkh360.com/newzkh_catalog/2.html)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\zkh360_spider.py", line 46, in parse
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 17:48:09: scraper.py:158 * 10588 Spider error processing <GET http://www.zkh360.com//Product/SearchProduct?pageIndex=23> (referer: http://www.zkh360.com/newzkh_catalog/2.html)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\zkh360_spider.py", line 43, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 17:48:11: scraper.py:158 * 10588 Spider error processing <GET http://www.zkh360.com//Product/SearchProduct?pageIndex=4> (referer: http://www.zkh360.com/newzkh_catalog/2.html)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\zkh360_spider.py", line 43, in parse
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 17:48:28: scraper.py:158 * 11336 Spider error processing <GET http://www.gongchang.com/> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\gongchang_spider.py", line 32, in parse
+    request = scrapy.Request(link, callback=self.parse_item2)
+  File "d:\python27\lib\site-packages\scrapy\http\request\__init__.py", line 25, in __init__
+    self._set_url(url)
+  File "d:\python27\lib\site-packages\scrapy\http\request\__init__.py", line 57, in _set_url
+    raise ValueError('Missing scheme in request url: %s' % self._url)
+ValueError: Missing scheme in request url: %20
+ERROR: 11-10 17:48:29: scraper.py:158 * 11336 Spider error processing <GET http://zkl.gongchang.com/> (referer: http://www.gongchang.com/)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\gongchang_spider.py", line 44, in parse_item2
+    request_two = scrapy.Request(link_two, callback=self.parse_item3)
+  File "d:\python27\lib\site-packages\scrapy\http\request\__init__.py", line 25, in __init__
+    self._set_url(url)
+  File "d:\python27\lib\site-packages\scrapy\http\request\__init__.py", line 57, in _set_url
+    raise ValueError('Missing scheme in request url: %s' % self._url)
+ValueError: Missing scheme in request url: /c15410/
+ERROR: 11-10 17:48:30: scraper.py:158 * 11336 Spider error processing <GET http://guolu.gongchang.com/> (referer: http://www.gongchang.com/)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\gongchang_spider.py", line 40, in parse_item2
+    request_one = scrapy.Request(link_one, callback=self.parse_item3)
+  File "d:\python27\lib\site-packages\scrapy\http\request\__init__.py", line 25, in __init__
+    self._set_url(url)
+  File "d:\python27\lib\site-packages\scrapy\http\request\__init__.py", line 57, in _set_url
+    raise ValueError('Missing scheme in request url: %s' % self._url)
+ValueError: Missing scheme in request url: /c13339/
+ERROR: 11-10 17:52:06: scraper.py:158 * 8932 Spider error processing <GET http://www.4006770558.com/index.php?app=search&act=pmodel&page=38006> (referer: http://www.4006770558.com/index.php?app=search&act=pmodel&page=38007)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\wangshanggou_spider.py", line 48, in parse
+    driver.get(response.url)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 248, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "d:\python27\lib\httplib.py", line 1074, in getresponse
+    response.begin()
+  File "d:\python27\lib\httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "d:\python27\lib\httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "d:\python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 10054] 
+ERROR: 11-10 17:52:17: scraper.py:158 * 8932 Spider error processing <GET http://www.4006770558.com/index.php?app=search&act=pmodel&page=16> (referer: http://www.4006770558.com/index.php?app=search&act=pmodel&page=12)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\wangshanggou_spider.py", line 48, in parse
+    driver.get(response.url)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 248, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "d:\python27\lib\httplib.py", line 1074, in getresponse
+    response.begin()
+  File "d:\python27\lib\httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "d:\python27\lib\httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "d:\python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 10054] 
+ERROR: 11-10 17:54:19: scraper.py:158 * 6664 Spider error processing <GET http://china.makepolo.com/> (referer: None)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\makepolo_spider.py", line 43, in parse
+    link_text = response.xpath("//div[@class='industry clearfix']/dl[%i]/dt/span/a/text()" %j).extract()[0].encode('utf-8')
+IndexError: list index out of range
+ERROR: 11-10 17:57:20: robotstxt.py:80 * 7436 Error downloading <GET http://www.mctmall.cn/robots.txt>: [<twisted.python.failure.Failure twisted.web._newclient.ParseError: (u'wrong number of parts', 'HTTP/1.1 404')>]
+ResponseFailed: [<twisted.python.failure.Failure twisted.web._newclient.ParseError: (u'wrong number of parts', 'HTTP/1.1 404')>]
+ERROR: 11-10 17:58:48: scraper.py:158 * 12136 Spider error processing <GET http://www.rolymro.com/ProductCenter.php?Type=14Categories&Categories_id=137> (referer: http://www.rolymro.com/ProductCenter.php?Type=14Categories&Categories_id=105)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\rolymro_spider.py", line 55, in parse_item3
+    driver.get(response.url)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 248, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "d:\python27\lib\httplib.py", line 1074, in getresponse
+    response.begin()
+  File "d:\python27\lib\httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "d:\python27\lib\httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "d:\python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 10054] 
+ERROR: 11-10 17:58:52: scraper.py:158 * 12136 Spider error processing <GET http://www.rolymro.com/ProductCenter.php?Type=14Categories&Categories_id=283> (referer: http://www.rolymro.com/ProductCenter.php?Type=14Categories&Categories_id=24)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\rolymro_spider.py", line 54, in parse_item3
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 86, in start
+    self.assert_process_still_running()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 99, in assert_process_still_running
+    % (self.path, return_code)
+WebDriverException: Message: Service phantomjs unexpectedly exited. Status code was: -1073741510
+
+ERROR: 11-10 17:58:55: scraper.py:158 * 12136 Spider error processing <GET http://www.rolymro.com/ProductCenter.php?Type=14Categories&Categories_id=231> (referer: http://www.rolymro.com/ProductCenter.php?Type=14Categories&Categories_id=146)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\rolymro_spider.py", line 54, in parse_item3
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 86, in start
+    self.assert_process_still_running()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 99, in assert_process_still_running
+    % (self.path, return_code)
+WebDriverException: Message: Service phantomjs unexpectedly exited. Status code was: -1073741510
+
+ERROR: 11-10 17:58:57: scraper.py:158 * 12136 Spider error processing <GET http://www.rolymro.com/ProductCenter.php?Type=14Categories&Categories_id=288> (referer: http://www.rolymro.com/ProductCenter.php?Type=14Categories&Categories_id=186)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\rolymro_spider.py", line 54, in parse_item3
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 17:59:00: scraper.py:158 * 12136 Spider error processing <GET http://www.rolymro.com/ProductCenter.php?Type=14Categories&Categories_id=196> (referer: http://www.rolymro.com/ProductCenter.php?Type=14Categories&Categories_id=16)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\rolymro_spider.py", line 54, in parse_item3
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 86, in start
+    self.assert_process_still_running()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 99, in assert_process_still_running
+    % (self.path, return_code)
+WebDriverException: Message: Service phantomjs unexpectedly exited. Status code was: -1073741510
+
+ERROR: 11-10 18:00:37: scraper.py:158 * 11604 Spider error processing <GET http://www.vipmro.com/search?categoryId=501110> (referer: http://www.vipmro.com/)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\spiders\vipmro_spider.py", line 74, in parse_item2
+    time.sleep(3)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 18:00:40: scraper.py:158 * 11604 Spider error processing <GET http://www.vipmro.com/search?categoryId=501126> (referer: http://www.vipmro.com/)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\spiders\vipmro_spider.py", line 49, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 18:00:43: scraper.py:158 * 11604 Spider error processing <GET http://www.vipmro.com/search?categoryId=501111> (referer: http://www.vipmro.com/)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\spiders\vipmro_spider.py", line 49, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 18:00:45: scraper.py:158 * 11604 Spider error processing <GET http://www.vipmro.com/search?categoryId=501112> (referer: http://www.vipmro.com/)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\spiders\vipmro_spider.py", line 49, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 18:00:47: scraper.py:158 * 11604 Spider error processing <GET http://www.vipmro.com/search?categoryId=501118> (referer: http://www.vipmro.com/)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\spiders\vipmro_spider.py", line 49, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 18:00:49: scraper.py:158 * 11604 Spider error processing <GET http://www.vipmro.com/search?categoryId=501115> (referer: http://www.vipmro.com/)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\spiders\vipmro_spider.py", line 49, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 18:00:52: scraper.py:158 * 11604 Spider error processing <GET http://www.vipmro.com/search?categoryId=501119> (referer: http://www.vipmro.com/)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\spiders\vipmro_spider.py", line 49, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 18:00:55: scraper.py:158 * 11604 Spider error processing <GET http://www.vipmro.com/search?categoryId=501113> (referer: http://www.vipmro.com/)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\spiders\vipmro_spider.py", line 49, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 86, in start
+    self.assert_process_still_running()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 99, in assert_process_still_running
+    % (self.path, return_code)
+WebDriverException: Message: Service phantomjs unexpectedly exited. Status code was: -1073741510
+
+ERROR: 11-10 18:01:36: scraper.py:158 * 11604 Spider error processing <GET http://www.vipmro.com/search?categoryId=501116> (referer: http://www.vipmro.com/)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\spiders\vipmro_spider.py", line 75, in parse_item2
+    body = driver.page_source
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 501, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)['value']
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "d:\python27\lib\httplib.py", line 1074, in getresponse
+    response.begin()
+  File "d:\python27\lib\httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "d:\python27\lib\httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "d:\python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 10054] 
+ERROR: 11-10 18:01:38: scraper.py:158 * 11604 Spider error processing <GET http://www.vipmro.com/search?categoryId=501114> (referer: http://www.vipmro.com/)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\11.11\commondity\commondity\spiders\vipmro_spider.py", line 49, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 52, in __init__
+    self.service.start()
+  File "d:\python27\lib\site-packages\selenium\webdriver\common\service.py", line 90, in start
+    time.sleep(1)
+IOError: [Errno 4] Interrupted function call
+ERROR: 11-10 18:09:46: scraper.py:158 * 10692 Spider error processing <GET http://www.91yilong.com/category-595-b0.html> (referer: http://www.91yilong.com/catalog.php)
+Traceback (most recent call last):
+  File "d:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\11.11\commondity\commondity\spiders\91yilong_spider.py", line 48, in parse_item2
+    driver = webdriver.PhantomJS()
+  File "d:\python27\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 58, in __init__
+    desired_capabilities=desired_capabilities)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 90, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 177, in start_session
+    response = self.execute(Command.NEW_SESSION, capabilities)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 234, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 401, in execute
+    return self._request(command_info[0], url, body=data)
+  File "d:\python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 471, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "d:\python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "d:\python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "d:\python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "d:\python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "d:\python27\lib\urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10061] >
